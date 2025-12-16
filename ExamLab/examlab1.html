@@ -3,25 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>examlab1</title>
+    <title>Examlab1</title>
 </head>
-
 <body>
+    <main>
+        <table border ="0" cellspacing="0" cellpadding="6" align ="center" bgcolor ="#E9EBEA">
+            
 
-    
-        <h2>สมัคร</h2>
-        <p>ง่ายและรวดเร็ว</p>
+            <tr>
+                <th align="left">
+                    <h2>สมัคร 
+                        <br>
+                        <font face="Tahoma" size="2">ง่ายและรวดเร็ว</font>
+                        <hr>
+                    </h2>
+                </th>
 
-        <from>
-            <label>ชื่อ: </label>
-            <input type ="text" name="name"> <label>นามสุกล: </label> <input type ="text" name="Lastname">
-            <br><br>
-            <label>หมายเลขโทรศัพท์มือถือหรืออีเมล: </label><input type ="text" name="numberoremail" >
-            <br><br>
-            <label>รหัสผ่านใหม่: </label><input type ="text" name="Newassword" >
-            <br>
-            <p>วันเกิด</p>
-            <select> 
+                <th>
+                    <font face="Tahoma" size="2">x</font>
+                </th>
+                
+            </tr >
+
+            <tr >
+                <th align ="left">
+                    <input type ="text" name="name" placeholder="ชื่อ"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type ="text" name="Lastname" placeholder="นามสกุล">
+                </th>
+                
+            </tr>
+            
+            <tr>
+                <td>
+                     <input type ="text" name="numberAndEmail" placeholder="หมายเลขโทรศัพท์มือถือหรืออีเมล" size =40%>               
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                  <input type ="text" name="Password" placeholder="รหัสผ่านใหม่" size =40% >
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                <font face="Tahoma" size="2">
+                    วันเกิด
+                </font>
+                <br>
+                <select>
                 <option>1</option>
                 <option>2</option>
                 <option>3</option>
@@ -53,22 +83,22 @@
                 <option>29</option>
                 <option>30</option>
                 <option>31</option>
-            </select>
-            <select>
+                </select>
+                <select>
                 <option>ม.ค.</option>
                 <option>ก.พ.</option>
-                <option>ม.ย.</option>
-                <option>ม.ษ.</option>
+                <option>มี.ค.</option>
+                <option>เม.ย.</option>
                 <option>พ.ค.</option>
-                <option>ม.ค</option>
-                <option>ก.ย.</option>
+                <option>มิ.ย</option>
+                <option>ก.ค.</option>
                 <option>ส.ค.</option>
                 <option>ก.ย.</option>
                 <option>ต.ค.</option>
                 <option>พ.ย.</option>
                 <option>ธ.ค.</option>
-            </select>
-            <select>
+                </select>
+                <select>
                 <option>2006</option>
                 <option>2007</option>
                 <option>2008</option>
@@ -89,27 +119,74 @@
                 <option>2023</option>
                 <option>2024</option>
                 <option>2025</option>
-            </select>
-            <p>เพศ</p>
-            <tabel border = "1" cellspacing="8" cellpadding="8">
+                </select>
+                </td>
+                
+            </tr>
 
-                <!--แถว-->
-                <tr>
-                    <th><input  name="gender" value="female" type="radio">หญิง
-                    <th><input  name="gender" value="Man" type="radio">ชาย</th>  
-                </tr>
+            <tr>
+                <td>
+                    <h5>เพศ</h5>
+                    <table border="0" width="100%" cellpadding="4" cellspacing="0">
+                      <tr>
+                        <td width="50%">
+                          <table border="1" width="100%" cellpadding="6" cellspacing="0">
+                            <tr>
+                              <td>
+                                <table border="0" width="100%" cellpadding="0" cellspacing="0">
+                                  <tr>
+                                    <td align="left">
+                                      <font face="Tahoma" size="2">หญิง</font>
+                                    </td>
+                                    <td align="right">
+                                      <input type="radio" name="gender" value="female">
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
 
-            </table>
-            <br><br><br>
-            <article >
-                เมื่อคลิ๊ก สมัครแสดงว่าคุณยอมรับข้อกำหนด นโยบายข้อมูล และ นโยบาย <br>
-                คุกกี้ของเรา คุณอาจจะได้รับการแจ้งเตือนทาง SMS จากเราและสามารถเลือก <br>ไม่รับได้ในภายหลัง
-            </article>
-            <br><br>
-            <button type ="submit">สมัคร</button>
+                        <td width="50%">
+                          <table border="1" width="100%" cellpadding="6" cellspacing="0">
+                            <tr>
+                              <td>
+                                <table border="0" width="100%" cellpadding="0" cellspacing="0">
+                                  <tr>
+                                    <td align="left">
+                                      <font face="Tahoma" size="2">ชาย</font>
+                                    </td>
+                                    <td align="right">
+                                      <input type="radio" name="gender" value="male">
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <tr align="left">
+                <td>
+                  <font face="Tahoma" size="2">
+                    เมื่อคลิ๊ก สมัครแสดงว่าคุณยอมรับข้อกำหนด นโยบายข้อมูล และ นโยบาย<br>
+                    คุกกี้ของเรา คุณอาจจะได้รับการแจ้งเตือนทาง SMS จากเราและสามารถเลือก<br>ไม่รับได้ในภายหลัง
+                  </font>
+                  </td>
+            </tr>
+
+            <tr>
+                <th>
+                    <button type="submit">สมัคร</button>
+                </th>
+            </tr>
             
-        </from>
-    
-    
+        </table>
+    </main>
 </body>
 </html>
