@@ -1,0 +1,111 @@
+             body {
+                background-image: url('https://i.pinimg.com/1200x/d1/c5/c9/d1c5c9b6f26566ecf7f5f60e1076f53f.jpg');
+            }
+            
+            /* 1.Element Selector */
+            
+            h2 {
+                color: rgb(2, 2, 2) ;
+                border: 3px solid ;
+                background-color: #e6dbdb;
+            }
+
+            /* 2. Class Selector*/
+            .bg-color {
+                background : yellow;
+                padding: 5px ;
+            }
+
+            .bg2-color {
+                background : rgb(155, 240, 211);
+                padding: 5px ;
+            }
+
+            .bg3-color {
+                background : rgb(251, 251, 109);
+                color: rgb(0, 0, 0);
+                border : 3px solid ;
+                padding: 5px ;
+            }
+
+            /*ID Selector และสามารถมีได้แค่ตัวเดียว */
+            #header {
+                color: rgb(0, 0, 0) ;
+                padding: 10px;
+                
+            }
+
+            button:hover{
+
+                color:  white ;
+                background-color: #ff0000;
+                cursor: pointer;
+
+            }
+
+            input[type = "text"] {
+                border: 2px solid rgb(123, 123, 126) ;
+                padding: 10px ;
+                border-radius: 5px;
+            }
+
+            input[type = "text"]:focus {
+                border-color:  rgb(150, 150, 150);
+                outline: none ;
+                background-color: #f7f7f7;
+            }
+
+            
+            input[type = "email"] {
+                border: 2px solid rgb(123, 123, 126) ;
+                padding: 10px ;
+                border-radius: 5px;
+            }
+
+            input[type = "email"]:focus {
+                border-color:  rgb(215, 128, 128);
+                outline: none ;
+                background-color: #f7f7f7;
+            }
+            
+            h1 {
+                font-size: 40px ;
+                text-shadow: 5px 5px 5px #928484;
+            }
+
+            h1 {
+                width: 500px;
+                border: 1px solid #ccc ;
+                padding: 20px ;
+                word-wrap: break-word;
+            }
+
+            .parent {
+            
+            
+            font-size: 16px;
+            border: 5px solid #aa1b08;
+            padding: 5px;
+            margin-top: 20px;
+            width: 800px;
+            height: auto ;
+
+            }
+
+            .deco-underline {
+            text-decoration: underline;
+            text-decoration-color: red;
+            }
+
+            .align-left {
+                text-align: left;
+            }
+
+            button {
+                color: rgb(0, 0, 0) ;
+                border: 3px solid ;
+                background-color: #ffffff;
+                height: 40px;
+                width: 100px;
+                border-radius: 50px;
+            }
