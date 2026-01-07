@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+
+        /* Grid Container */
+        .grid-container {
+            display: grid;
+
+            grid-template: 
+            "header header" 70px
+            "aside main" 530px
+            "footer footer" 70px
+            /20% 80%;
+
+            gap: 10px;
+            padding: 10px;
+            background-color: #e0f7f7;
+            height: 100vh;
+            box-sizing: border-box;
+        }
+
+
+        /* ส่วนของ Header */
+        header{
+            grid-area: header;
+            background-color: rgb(52, 129 , 0); /*color*/
+            color: white ; text-align:center; line-height: 70px; font-size: 24px;
+        }
+
+        /* ส่วนของ Sidebar */
+        aside {
+            grid-area: aside;
+            background-color: rgb(0, 82, 129); /*color*/
+            color: white;
+            text-align: center; line-height: 530px; font-size: 24px;
+        }
+
+        /* Main content หรือส่วนของข้อความ */
+        main {
+            grid-area: main;
+            background-color: rgb(129, 0, 129); /*color*/
+            color: white; text-align: center; line-height: 530px; font-size: 24px;
+        }
+
+        footer {
+            
+            grid-area: footer;
+            background-color: rgb(0, 129, 86);
+            color: white; text-align: center; line-height: 70px; font-size: 24px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="grid-container">
+
+        <header>header</header>
+        <aside>aside</aside>
+        <main>contect</main>
+        <footer>footer</footer>
+
+    </div>
+</body>
+</html>

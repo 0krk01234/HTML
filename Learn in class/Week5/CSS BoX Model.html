@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+.box {
+  width: 200px;
+  padding: 20px;
+  border: 5px solid #0077ff;
+  margin: 20px;
+  background-color: #cce5ff;
+}
+
+/* ตัวอย่างแบบปกติ (content-box) */
+.content-box {
+  box-sizing: content-box;
+}
+
+/* ตัวอย่างแบบ border-box */
+.border-box {
+  box-sizing: border-box;
+  background-color: #ffd8cc;
+}
+
+.Shadow-Simple {
+    box-shadow: 10px 10px 5px rgba(0,0,0,0.4) ;
+    border: dashed; /*เห็นภาพเส้นขอบชัดที่สุด*/
+}
+
+.Shadow-Num {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3) ;
+}
+
+.Shadow-Down {
+    box-shadow: 0 12px 8px rgba(0,0,0,0.25) ;
+}
+
+.Shadow-Down-inset {
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.4) ;
+}
+
+.Shadow-Muti {
+    box-shadow: multi-layer ;
+}
+
+
+</style>
+</head>
+
+<body>
+
+    
+<h2>CSS Box Model</h2>
+
+<h3>1 box-sizing: content-box (ค่าปกติ)</h3>
+<div class="box content-box Shadow-Simple">
+  ความกว้างที่กำหนด = 200px  
+  (ไม่รวม padding + border)
+</div>
+
+<h3>2 box-sizing: border-box</h3>
+<div class="box border-box Shadow-Down-inset">
+  ความกว้างที่กำหนด = 200px  
+  (รวม padding + border อยู่ใน 200px)
+</div>
+
+</body>
+</html>
