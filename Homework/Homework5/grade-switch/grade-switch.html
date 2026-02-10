@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <pre id="outputBox">ผลลัพธ์จะปรากฏที่นี่</pre>
+    <button onclick="Mathrand()"> Run code</button>
+
+    <script>
+        function Mathrand() {
+
+            let dice = Math.floor(Math.random() * 100) + 1;
+
+            const output = [] ;
+
+            console.log("คะแนนที่สุ่มได้: " + " " + dice);
+            output.push("คะแนนที่สุ่มได้: " + " " + dice);
+
+            switch(true) {
+
+            case(dice > 80) :
+                console.log("เกรด: A");
+                output.push("เกรด: A");
+
+                console.log("ผลสอบ: ผ่าน");
+                output.push("ผลสอบ: ผ่าน");
+
+                console.log("คำอธิบาย: ยอดเยี่ยมมาก!");
+                output.push("คำอธิบาย: ยอดเยี่นมมาก!");
+                break;
+            
+
+            case(dice >= 70 && dice <= 80) :
+                console.log("เกรด: B");
+                output.push("เกรด: B");
+
+                console.log("ผลสอบ: ผ่าน");
+                output.push("ผลสอบ: ผ่าน");
+
+                console.log("คำอธิบาย: ดีมากรักษามาตรฐานไว้");
+                output.push("คำอธิบาย: ดีมากรักษามาตรฐานไว้");
+                break;
+
+
+            case(dice >= 60 && dice <= 70) :
+                console.log("เกรด: C");
+                output.push("เกรด: C");
+
+                console.log("ผลสอบ: ผ่าน");
+                output.push("ผลสอบ: ผ่าน");
+
+                console.log("คำอธิบาย: ผ่านเกณฑ์ระดับดี");
+                output.push("คำอธิบาย: ผ่านเกณฑ์ระดับดี");
+                break;
+
+
+            case(dice >= 50 && dice <= 60) :
+                console.log("เกรด: D");
+                output.push("เกรด: D");
+
+                console.log("ผลสอบ: ผ่าน");
+                output.push("ผลสอบ: ผ่าน");
+
+                console.log("คำอธิบาย: พอใช้แต่ควรพัฒนาเพิ่ม");
+                output.push("คำอธิบาย: พอใช้แต่ควรพัฒนาเพิ่ม");
+                break;
+
+
+            case(dice < 50) :
+                console.log("เกรด: F");
+                output.push("เกรด: F");
+
+                console.log("ผลสอบ: ไม่ผ่าน");
+                output.push("ผลสอบ: ไม่ผ่าน");
+
+                console.log("คำอธิบาย: ต้องลงทะเบียนเรียนใหม่");
+                output.push("คำอธิบาย: ต้องลงทะเบียนเรียนใหม่");
+                break;
+        }
+
+        document.getElementById("outputBox").textContent = output.join("\n");
+
+
+    }
+    </script>
+    
+</body>
+</html>

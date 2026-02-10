@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    
+    <style>
+
+        /*Css variable mobile first*/
+
+        :root {
+            --padding: 16px;
+            --bg-color: #f4f6f8;
+            --card-bg: #ffffff;
+            --text-color: #1f2933;
+        }
+
+        /*ปรับค่าเมื่อจอใหญ่ขึ้น*/
+        @media (min-width: 768) {
+            :root {
+                --padding: 32px;
+            }
+        }
+
+        body {
+            margin: 0 ;
+            font-family: Tahoma, sans-serif;
+            background: var(--bg--color);
+            color: var(--text-color);
+        }
+
+        /*Container ใช้ CSS Variable */
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: var(--padding);
+        }
+
+        .card {
+            background: var(--card--bg);
+            padding: var(--padding);
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-size: clamp(1.6rem, 4vw, 2.8rem);
+            margin-top: 0;
+        }
+
+        p {
+            font-size: clamp(0.95rem, 2.5vw , 1.1rem);
+            line-height: 1.6;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="card">
+
+            <p>
+                ตัวอย่างนี้ใช้แสดง CSS Variables และฟังก์ชั่น clamp()
+                เพื่อทำ Responsive Design โดยไม่ต้องเขียน Media Query จำนวนมาก
+            </p>
+
+            <p>
+                เมื่อขยายย่อหน้าจอจะเห็นว่าระยะขอบและขนาดตัวอักษร
+                ปรับเปลี่ยนอย่างอัตโนมัติและลื่นไหล
+            </p>
+        </div>
+    </div>
+    
+</body>
+</html>

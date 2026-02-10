@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Asingment</title>
+</head>
+<body>
+
+    <pre id="outputBox">ผลลัพธ์จะปรากฏที่นี่</pre>
+    <button onclick="First()">Run Code</button>
+
+    <script>
+        function First() {
+
+            const output = [] ;
+            
+            let maxNumber = 20 ;
+
+            for(let i = 0 ; i <= maxNumber ; i++ ) {
+
+                if( i % 2 == 1) {
+
+                    console.log(i + " " + "(คี่)");
+                    output.push(i + " " + "(คี่)")
+                    
+                }
+
+                else if( i % 2 == 0) {
+
+                    console.log(i + " " + "(คู่)");
+                    output.push(i + " " + "(คู่)");
+                    
+                }
+            }
+
+            for(let i = 0 ; i <= maxNumber ; i++ ) {
+
+                 if( i % 2 == 0) {
+
+                    console.log("นับทีละ2: " + i);
+                    output.push("นับทีละ2: " + i);                    
+                }
+            }
+
+            for(let i = maxNumber ; i >=0 ; i-- ) {
+
+                    console.log("ถอยหลัง: " + i);
+                    output.push("ถอยหลัง: " + i);                    
+                }
+
+            document.getElementById("outputBox").textContent = output.join("\n");
+
+
+        }
+    </script>
+    
+</body>
+</html>
